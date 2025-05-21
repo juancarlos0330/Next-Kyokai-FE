@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-amatic: 'Amatic SC', cursive;
+  --font-geistMono: 'Amatic SC', cursive;
+  --font-zen-kurenaido: var(--font-zen-kurenaido);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #0a0a0a;
+    --foreground: #ededed; */
+    --font-amatic: 'Amatic SC', cursive;
+  }
+}
+
+h1, .amatic {
+  font-family: var(--font-amatic);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Amatic SC', cursive;
+}
+
+.class-button {
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.class-button.submit {
+  font-size: 36px;
+  padding: 4px 18px;
+}
+
+.class-button button.orange{
+  background-color: #B45F06;
+}
+
+.class-button button.purple{
+  background-color: #681d45;
+}
+
+.class-button button.melon{
+  background-color: #76A5AF;
+}
+
+.class-button button.light{
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+.class-button button.pink{
+  background-color: #F4CCCC;
+  color: black;
+}
+
+.class-button button.watermelon{
+  background-color: #D0E0E3;
+  color: black;
+}
+
+.class-button span {
+  display: block;
+  font-family: var(--font-funnel-display);
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.class-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(105%);
+}
+
+.menu-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease;
+}
+
+.menu-link:hover {
+  transform: translateY(-2px);
+  filter: brightness(115%);
+}
+
+.menu-link.active {
+  opacity: .7;
+}
+
+.font-geistMono {
+  font-family: var(--font-geist-mono);
+  line-height: 1;
+}
+
+.font-zenKurenaido {
+  font-family: var(--font-zen-kurenaido);
+}
+
+.font-semibold {
+  font-family: sans-serif;
+  line-height: 0.1;
+}
+
+.font-lexend {
+  font-family: 'Lexend', sans-serif;
+}
+
+.font-kleeOne {
+  font-family: 'Klee One', sans-serif;
+}
+
+.font-funnelDisplay {
+  font-family: var(--font-funnel-display);
+}
+
+.font-notoSerifGeorgian {
+  font-family: 'Georgia', serif;
+}
+
+.font-outfit {
+  font-family: 'Outfit', serif;
+}
+
+.font-notoSansJP {
+  font-family: var(--font-noto-sans-jp);
+}
